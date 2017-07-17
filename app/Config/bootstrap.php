@@ -125,3 +125,17 @@ CakePlugin::load('DebugKit');
 if (PHP_SAPI === 'cli') {
 	CakePlugin::load('Migrations');
 }
+
+
+/**
+ * Configure the application titles
+ */
+
+Configure::write(
+    'APP',
+    array(
+        'TITLE' => 'Tutorías',
+        'USERS' => 'Estudiantes',
+        'USER' => 'estudiante',
+         )
+);
